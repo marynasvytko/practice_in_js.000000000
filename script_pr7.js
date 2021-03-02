@@ -61,7 +61,10 @@ function range(begin, end, step) {
     }
     return arr;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dba5becd9b67966fb749a6294256a7d988323b4e
 /* Сделайте функцию getDivisors, 
 которая параметром принимает число и возвращает массив его делителей 
 (чисел, на которое делится данное число). */
@@ -100,6 +103,7 @@ function hello2(name) {
     }
 }
 console.log(hello + hello2('Василий'));
+<<<<<<< HEAD
 
 /* Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
 Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, 
@@ -123,3 +127,5 @@ function ucfirst(word) {
     return upper;
 }
 console.log(str_new);
+=======
+>>>>>>> dba5becd9b67966fb749a6294256a7d988323b4e
