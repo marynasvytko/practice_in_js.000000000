@@ -61,3 +61,65 @@ function range(begin, end, step) {
     }
     return arr;
 }
+
+/* Сделайте функцию getDivisors, 
+которая параметром принимает число и возвращает массив его делителей 
+(чисел, на которое делится данное число). */
+
+function getDivisors(number) {
+    let arr = [],
+        devideby = 1;
+    for (let i = 0; i < number; i++) {
+        if (number % devideby == 0) {
+            arr.push(devideby);
+
+        }
+        devideby++;
+    }
+    return arr;
+}
+
+console.log(getDivisors(6));
+
+/* Сделайте функцию inArray, которая определяет, есть в массиве элемент с заданным текстом или нет. 
+Функция первым параметром должна принимать текст элемента, а вторым - массив, в котором делается поиск. 
+Функция должна возвращать true или false. */
+
+
+/* Напишите функцию hello2(), которая при вызове будет принимать переменную name 
+(например, «Василий») и выводить строку 
+(в нашем случае «Привет, Василий»).  В случае отсутствующего аргумента выводить «Привет, гость» */
+let hello = "Привет,",
+    guesst = "гость";
+
+function hello2(name) {
+    if (!name) {
+        return guesst;
+    } else {
+        return name;
+    }
+}
+console.log(hello + hello2('Василий'));
+
+/* Дана строка вида 'var_text_hello'. Сделайте из него текст 'varTextHello'.
+Для этого сделайте вспомогательную функцию ucfirst, которая будет получать строку, 
+делать первый символ этой строки заглавным 
+и возвращать обратно строку с заглавной первой буквой. */
+
+let str = 'var_text_hello',
+    arr = str.split("_"),
+    str_new = "";
+//varTextHello
+for (let i = 0; i < arr.length; i++) {
+    if (i != 0) {
+        str_new += ucfirst(arr[i]);
+    } else {
+        str_new += arr[0];
+    }
+}
+
+function ucfirst(word) {
+    let upper = word[0].toUpperCase() + word.slice(1);
+    return upper;
+}
+console.log(str_new);
